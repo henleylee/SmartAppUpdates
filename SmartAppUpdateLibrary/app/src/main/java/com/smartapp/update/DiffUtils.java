@@ -19,6 +19,6 @@ public class DiffUtils {
     public static native int genDiff(String oldApkPath, String newApkPath, String patchPath);
 
     static {
-        System.loadLibrary("libSmartAppUpdates");// 之前在build.gradle里面设置的so名字，必须一致
+        System.loadLibrary("SmartAppUpdates");// 库名为libSmartAppUpdates.so
     }
 }
